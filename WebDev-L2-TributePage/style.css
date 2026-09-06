@@ -1,0 +1,505 @@
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #263238;
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background-color: #102a43;
+    color: white;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd166;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+    padding: 80px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #102a43,
+        #1f4e79
+    );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #ffd166;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #ffd166;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 600px;
+    color: #e5edf5;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    background-color: #ffd166;
+    color: #102a43;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    background-color: white;
+}
+
+.hero-image {
+    width: 350px;
+    height: 430px;
+
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 8px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/* COMMON SECTION */
+
+.section {
+    padding: 90px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #1f6f8b;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-size: 2.7rem;
+    color: #102a43;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    background-color: #ffffff;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-content p {
+    margin-bottom: 22px;
+    font-size: 1.05rem;
+    color: #455a64;
+}
+
+
+/* TIMELINE */
+
+.timeline-section {
+    background-color: #eef6fa;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: auto;
+
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 100px;
+    top: 0;
+    bottom: 0;
+
+    width: 3px;
+
+    background-color: #1f6f8b;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+
+    gap: 30px;
+
+    position: relative;
+
+    margin-bottom: 35px;
+}
+
+.timeline-year {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    color: #1f6f8b;
+
+    text-align: right;
+
+    padding-right: 20px;
+}
+
+.timeline-content {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #102a43;
+}
+
+.timeline-content p {
+    color: #607d8b;
+}
+
+
+/* QUOTE SECTION */
+
+.quote-section {
+    padding: 100px 10%;
+
+    background-color: #102a43;
+
+    color: white;
+
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.quote-mark {
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 6rem;
+
+    color: #ffd166;
+
+    height: 70px;
+}
+
+blockquote {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+
+    line-height: 1.4;
+
+    margin-bottom: 25px;
+}
+
+.quote-author {
+    color: #ffd166;
+    font-weight: 600;
+}
+
+
+/* LEGACY SECTION */
+
+.legacy {
+    background-color: #ffffff;
+}
+
+.legacy-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.legacy-card {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background-color: #f5f9fc;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2edf3;
+
+    transition: 0.3s;
+}
+
+.legacy-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+
+    margin-bottom: 15px;
+}
+
+.legacy-card h3 {
+    color: #102a43;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+.legacy-card p {
+    color: #607d8b;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 50px 10%;
+
+    background-color: #081c2d;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #b9c9d6;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        width: 300px;
+        height: 360px;
+    }
+
+    .legacy-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .section {
+        padding: 65px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .timeline-year {
+        text-align: left;
+        padding: 0 0 8px 0;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .quote-section {
+        padding: 70px 6%;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+    }
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s ease;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
