@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureGate | Login</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <div class="brand">
+                <div class="brand-icon">SG</div>
+                <h1>SecureGate</h1>
+                <p>Login Authentication System</p>
+            </div>
+
+            <form id="loginForm" novalidate>
+
+                <div class="form-group">
+                    <label for="loginIdentity">Username or Email</label>
+
+                    <input
+                        type="text"
+                        id="loginIdentity"
+                        name="loginIdentity"
+                        placeholder="Enter username or email"
+                        autocomplete="username"
+                    >
+
+                    <small class="field-error" id="loginIdentityError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="loginPassword"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="loginPasswordToggle"
+                            aria-label="Show password"
+                        >
+                            Show
+                        </button>
+                    </div>
+
+                    <small class="field-error" id="loginPasswordError"></small>
+                </div>
+
+                <div class="message error-message" id="loginMessage"></div>
+
+                <button type="submit" class="primary-button">
+                    Login
+                </button>
+
+            </form>
+
+            <p class="switch-text">
+                Don't have an account?
+                <a href="./register.html">Create an account</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
