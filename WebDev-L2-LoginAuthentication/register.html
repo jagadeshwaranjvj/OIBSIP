@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureGate | Register</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <div class="brand">
+                <div class="brand-icon">SG</div>
+                <h1>Create Account</h1>
+                <p>Register for SecureGate</p>
+            </div>
+
+            <form id="registerForm" novalidate>
+
+                <div class="form-group">
+                    <label for="registerUsername">Username</label>
+
+                    <input
+                        type="text"
+                        id="registerUsername"
+                        name="username"
+                        placeholder="Choose a username"
+                        autocomplete="username"
+                    >
+
+                    <small class="field-error" id="registerUsernameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                    >
+
+                    <small class="field-error" id="registerEmailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="password"
+                            placeholder="Minimum 8 characters and 1 number"
+                            autocomplete="new-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="registerPasswordToggle"
+                            aria-label="Show password"
+                        >
+                            Show
+                        </button>
+                    </div>
+
+                    <small class="password-hint">
+                        Use at least 8 characters with at least 1 number.
+                    </small>
+
+                    <small class="field-error" id="registerPasswordError"></small>
+                </div>
+
+                <div class="message error-message" id="registerMessage"></div>
+
+                <button type="submit" class="primary-button">
+                    Register
+                </button>
+
+            </form>
+
+            <p class="switch-text">
+                Already have an account?
+                <a href="./index.html">Login here</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
