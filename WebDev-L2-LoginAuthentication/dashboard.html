@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureGate | Dashboard</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+
+        <div class="dashboard-brand">
+            <div class="brand-icon small-icon">SG</div>
+            <span>SecureGate</span>
+        </div>
+
+        <button id="logoutButton" class="logout-button">
+            Logout
+        </button>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+        <section class="welcome-card">
+
+            <div class="success-icon">✓</div>
+
+            <p class="eyebrow">AUTHENTICATION SUCCESSFUL</p>
+
+            <h1>
+                Welcome, <span id="dashboardUsername">User</span>!
+            </h1>
+
+            <p class="dashboard-description">
+                You have successfully logged in to your protected dashboard.
+            </p>
+
+            <div class="account-details">
+
+                <div class="detail-item">
+                    <span class="detail-label">Username</span>
+                    <strong id="accountUsername">-</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Email</span>
+                    <strong id="accountEmail">-</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-label">Session</span>
+                    <strong>Active</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="feature-grid">
+
+            <article class="feature-card">
+                <span class="feature-number">01</span>
+                <h2>Protected Access</h2>
+                <p>
+                    This dashboard requires an authenticated session.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">02</span>
+                <h2>Secure Storage</h2>
+                <p>
+                    Passwords are stored as SHA-256 hashes instead of plain text.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">03</span>
+                <h2>Session Control</h2>
+                <p>
+                    Logging out removes the active authentication session.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
